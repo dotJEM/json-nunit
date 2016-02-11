@@ -34,6 +34,10 @@
       <HintPath>..\packages\Newtonsoft.Json.8.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,13 +48,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Constraints\HasJsonPropertiesConstraint.cs" />
+    <Compile Include="Helpers\AbstractConstraint.cs" />
+    <Compile Include="Extensions\ConstraintExpressionExtensions.cs" />
+    <Compile Include="Constraints\JsonEqualsConstraint.cs" />
+    <Compile Include="Constraints\EnumerableEqualsConstraint.cs" />
+    <Compile Include="JsonIs.cs" />
+    <Compile Include="Constraints\IPropertiesConstraintsFactory.cs" />
+    <Compile Include="Constraints\ObjectPropertiesEqualsConstraint.cs" />
+    <Compile Include="Constraints\ObjectPropertiesNotEqualsConstraint.cs" />
+    <Compile Include="Helpers\PrivateMembersHelper.cs" />
+    <Compile Include="JsonHas.cs" />
+    <Compile Include="ObjectHas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Helpers\ReflectionExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DotJEM.NUnit.Json.nuspec" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
