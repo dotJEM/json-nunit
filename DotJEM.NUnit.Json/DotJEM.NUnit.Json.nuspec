@@ -7,7 +7,7 @@
     <authors>jeme</authors>
     <owners>jeme</owners>
     <licenseUrl>https://github.com/dotJEM/json-nunit/blob/master/LICENSE</licenseUrl>
-    <projectUrl>json-nunit</projectUrl>
+    <projectUrl>https://github.com/dotJEM/json-nunit</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
     <releaseNotes>https://github.com/dotJEM/json-nunit/releases</releaseNotes>
