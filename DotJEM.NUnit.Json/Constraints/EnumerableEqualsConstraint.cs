@@ -59,7 +59,7 @@ namespace DotJEM.NUnit.Json.Constraints
             {
                 object actualItem = actualEnummerable.ElementAt(i);
                 object expectedItem = expected.ElementAt(i);
-                if (HAS.Properties.EqualTo(expectedItem).Matches(actualItem))
+                if (ObjectHas.Properties.EqualTo(expectedItem).Matches(actualItem))
                     continue;
 
                 expectedMessage = "Element at [" + i + "] should be: \"" + expectedItem + "\"";
