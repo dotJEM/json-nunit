@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>jeme</authors>
+    <owners>jeme</owners>
+    <licenseUrl>https://github.com/dotJEM/json-nunit/blob/master/LICENSE</licenseUrl>
+    <projectUrl>json-nunit</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>https://github.com/dotJEM/json-nunit/releases</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>Nunit JSON Constraints</tags>
+  </metadata>
+</package>
